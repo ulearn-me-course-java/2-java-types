@@ -2,11 +2,14 @@ package com.example.task05;
 
 public class Task05 {
 
-    public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+    public static String solution(int value) {
+        int degree = (int) Math.pow(10, (int) Math.log10(value));
+        while (degree != 0){
+            if((value / degree) % 2 == 1) return "FALSE";
+            value %= degree;
+            degree /= 10;
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
