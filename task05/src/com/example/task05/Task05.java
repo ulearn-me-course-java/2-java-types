@@ -1,21 +1,32 @@
 package com.example.task05;
 
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
 public class Task05 {
 
     public static String solution(int x) {
+        if(x <= 99999 && x >= 0) {
+            char[] str = Integer.toString(x).toCharArray();
+            byte res = 0;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+            for(byte i = 0; i < str.length; i++)
+            {
+                if((str[i] % 2) == 0) res++;
+                else break;
+            }
 
-        return "FALSE";
+            if(res == str.length) return "TRUE";
+            else return "FALSE";
+        }
+
+        else return "Incorrect number";
     }
+
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution(1234);
-        System.out.println(result);
-        */
+        System.out.println(solution(888888));
+        System.out.println(solution(-1));
+        System.out.println(solution(88888));
+        System.out.println(solution(89898));
     }
-
 }
