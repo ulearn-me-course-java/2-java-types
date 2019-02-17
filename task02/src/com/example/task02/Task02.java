@@ -3,19 +3,43 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        if(tryParseByte(input)) return "byte";
+        if(tryParseShort(input)) return  "short";
+        if(tryParseInt(input)) return "int";
+        if(tryParseLong(input)) return "long";
+        else return "Its No Integral Type";
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+    private static boolean tryParseByte(String value) {
+        try{
+            Byte.parseByte(value);
+            return true;
+        }
+        catch (Exception ex) { return false; }
     }
+
+    private static boolean tryParseInt(String value) {
+        try{
+            Integer.parseInt(value);
+            return true;
+        }
+        catch (Exception ex) { return false; }
+    }
+    private static boolean tryParseShort(String value) {
+        try{
+            Short.parseShort(value);
+            return true;
+        }
+        catch (Exception ex) { return false; }
+    }
+    private static boolean tryParseLong(String value) {
+        try{
+            Long.parseLong(value);
+            return true;
+        }
+        catch (Exception ex) { return false; }
+    }
+   // private static boolean tryParseInt(String value)
+    public static void main(String[] args) { }
 
 }
