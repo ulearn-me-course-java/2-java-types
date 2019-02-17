@@ -1,5 +1,7 @@
 package com.example.task02;
 
+import com.sun.xml.internal.fastinfoset.util.CharArray;
+
 public class Task02 {
 
     public static String solution(String input) {
@@ -7,6 +9,7 @@ public class Task02 {
         if(tryParseShort(input)) return  "short";
         if(tryParseInt(input)) return "int";
         if(tryParseLong(input)) return "long";
+        if(input.toCharArray().length == 1) return "char";
         else return "Its No Integral Type";
     }
 
@@ -33,13 +36,17 @@ public class Task02 {
         catch (Exception ex) { return false; }
     }
     private static boolean tryParseLong(String value) {
-        try{
+        try {
             Long.parseLong(value);
             return true;
+        } catch (Exception ex) {
+            return false;
         }
-        catch (Exception ex) { return false; }
     }
-   // private static boolean tryParseInt(String value)
-    public static void main(String[] args) { }
+    public static void main(String[] args) {
+        System.out.println(solution("9"));
+        System.out.println(solution("E"));
+        System.out.println(solution("Э"));
+    }
 
 }
