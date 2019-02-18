@@ -2,20 +2,23 @@ package com.example.task02;
 
 public class Task02 {
 
-    public static String solution(String input) {
+    static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        long convertInput = Long.valueOf(input);
+        if (convertInput == (byte)convertInput)
+            return "byte";
+        else if (convertInput == (short)convertInput)
+            return "short";
+        else if (convertInput == (int)convertInput)
+            return "int";
+        else return "long";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         String result = solution("12345");
         System.out.println(result);
-         */
-    }
 
+    }
 }
+
