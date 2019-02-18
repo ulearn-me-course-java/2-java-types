@@ -2,20 +2,23 @@ package com.example.task05;
 
 public class Task05 {
 
-    public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+    static String solution(int x) {
+        String strX = String.valueOf(x);
+        boolean t = true;
+        for (int i = 0; i < strX.length(); i++) {
+            if ((strX.toCharArray()[i] % 2) == 1) {
+                t = false;
+                break;
+            }
+        }
+        if (t)
+            return "TRUE";
+        else return "FALSE";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution(1234);
+        String result = solution(88889);
         System.out.println(result);
-        */
     }
 
 }
