@@ -1,7 +1,5 @@
 package com.example.task02;
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
-
 public class Task02 {
     private static long max = 0;
 
