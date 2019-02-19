@@ -1,7 +1,5 @@
 package com.example.task05;
 
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
-
 public class Task05 {
 
     public static String solution(int x) {
@@ -9,8 +7,7 @@ public class Task05 {
             char[] str = Integer.toString(x).toCharArray();
             byte res = 0;
 
-            for(byte i = 0; i < str.length; i++)
-            {
+            for(byte i = 0; i < str.length; i++) {
                 if((str[i] % 2) == 0) res++;
                 else break;
             }
