@@ -4,9 +4,11 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        long convertInput = Long.valueOf(input);
+        if(convertInput == (byte)convertInput) return "byte";
+        if(convertInput == (short)convertInput) return "short";
+        if(convertInput == (int)convertInput) return "int";
+        return "long";
     }
 
     public static void main(String[] args) {
