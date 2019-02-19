@@ -3,13 +3,11 @@ package com.example.task10;
 public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
-
-        // TODO корректно сравнивать два значения типа float с заданной пользователем точностью (параметр - количество знаков после запятой).
-        // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
-        // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
-        
-        return a == b;
-
+        float e = 1f;
+        for (int i = 0; i < precision; i++) {
+            e *= 0.1;
+        }
+        return Math.abs(a - b) < e || Double.isNaN(a) && Double.isNaN(b) || a == b;
     }
 
     public static void main(String[] args) {
