@@ -4,9 +4,11 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int calc = Math.abs(x + y);
 
-        return 0;
+        String ans = String.valueOf(calc);
+
+        return ans.toCharArray().length;
     }
 
     public static void main(String[] args) {
