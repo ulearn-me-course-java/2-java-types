@@ -3,10 +3,13 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        String numbers = "02468";
+        char[] arrayX = Integer.toString(x).toCharArray();
+        for (int i =0; arrayX.length > i; i++){
+            if (numbers.indexOf(arrayX[i]) == -1)
+                return "FALSE";
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
