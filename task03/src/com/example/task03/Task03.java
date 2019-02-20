@@ -4,7 +4,7 @@ public class Task03 {
 
     public static int getMetreFromCentimetre(int centimetre) {
 
-         return (int) centimetre / 100;
+        return (int) centimetre / 100;
     }
 
     public static void main(String[] args) {
