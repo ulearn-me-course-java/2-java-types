@@ -4,8 +4,7 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-        Long number = Long.parseLong(input);
+        long number = Long.parseLong(input);
         if (number >= -128 && number <= 127)
             return "byte";
         else if (number >= -Math.pow(2, 15) && number <= Math.pow(2, 15) - 1)
