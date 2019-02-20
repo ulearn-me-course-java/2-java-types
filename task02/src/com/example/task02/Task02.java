@@ -5,8 +5,15 @@ public class Task02 {
     public static String solution(String input) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        Long number = Long.parseLong(input);
+        if (number >= -128 && number <= 127)
+            return "byte";
+        else if (number >= -Math.pow(2, 15) && number <= Math.pow(2, 15) - 1)
+            return "short";
+        else if (number >= -Math.pow(2, 31) && number <= Math.pow(2, 31) - 1)
+            return "int";
+        else
+            return "long";
     }
 
     public static void main(String[] args) {
