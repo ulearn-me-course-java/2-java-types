@@ -4,18 +4,23 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        long toLong = Long.parseLong(input);
 
-        return "";
+        if(toLong == (byte) toLong) return "byte";
+
+        if(toLong == (short) toLong) return "short";
+
+        if(toLong == (int) toLong) return "int";
+
+        return "long";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+        System.out.println(solution("5"));
+        System.out.println(solution("-35000"));
+        System.out.println(solution("512"));
+        System.out.println(solution("2500000000"));
+
     }
 
 }
