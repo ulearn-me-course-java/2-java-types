@@ -2,11 +2,11 @@ package com.example.task07;
 
 public class Task07 {
 
-    public static int solution(int n, int m, int k) {
+    public static int solution(int width, int length, int sideOfObj) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        return (width / sideOfObj) * (length / sideOfObj);
     }
 
     public static void main(String[] args) {
