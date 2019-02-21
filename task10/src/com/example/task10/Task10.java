@@ -14,6 +14,5 @@ public class Task10 {
 
         boolean result = compare(sum, c, 2);
         System.out.println(result);
-
     }
 }
