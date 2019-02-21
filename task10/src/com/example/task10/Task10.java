@@ -3,7 +3,7 @@ package com.example.task10;
 public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
-        return a == b;
+        return Float.isNaN(a) && Float.isNaN(b) || a == b || Math.abs(a - b) < Math.pow(10, -precision);
     }
 
     public static void main(String[] args) {
@@ -16,5 +16,4 @@ public class Task10 {
         System.out.println(result);
 
     }
-
 }
