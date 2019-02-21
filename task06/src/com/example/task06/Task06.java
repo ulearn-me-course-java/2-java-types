@@ -3,19 +3,19 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int z = 0;
+        int temp = x + y;
+        do
+        {
+            temp = temp/10;
+            z += 1;
+        }
+        while(temp != 0);
+        return z;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = solution(12, 34);
-        System.out.println(result);
-        */
+        int result = solution(777, -777);
     }
 
 }
