@@ -4,18 +4,17 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        long value = Long.valueOf(input);
 
-        return "";
+        if(value > Integer.MAX_VALUE)return "long";
+        if(value > Short.MAX_VALUE) return "int";
+        if(value > Byte.MAX_VALUE) return "short";
+
+        return  "byte";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+        System.out.println(solution("12345"));
     }
 
 }
