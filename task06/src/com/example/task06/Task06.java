@@ -4,9 +4,13 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int number=x+y;
+        int count = (number == 0) ? 1 : 0;
+        while (number != 0) {
+            count++;
+            number /= 10;
+        }
+        return count;
     }
 
     public static void main(String[] args) {
