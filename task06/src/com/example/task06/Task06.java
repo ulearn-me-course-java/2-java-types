@@ -5,7 +5,7 @@ public class Task06 {
     public static int solution(int x, int y) {
 
         int tmp = x+y;
-        int count = 0;
+        int count = (tmp==0)?1:0;
         while(tmp!=0){
             tmp/=10;
             count++;
