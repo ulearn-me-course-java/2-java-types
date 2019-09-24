@@ -13,7 +13,7 @@ public class Task04 {
             case '*':
                 return a*b;
             case '/':
-                return a/b;
+                return (float)a/(float)b;
         }
 
         return 0;
