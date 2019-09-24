@@ -6,7 +6,7 @@ public class Task13 {
 
         // TODO привести букву к верхнему регистру
 
-        return c;
+        return (char)(c+'A'-'a');
     }
 
     public static void main(String[] args) {
