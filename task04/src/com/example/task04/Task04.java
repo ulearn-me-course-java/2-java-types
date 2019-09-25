@@ -5,7 +5,15 @@ public class Task04 {
     public static float calculate(int a, int b, String operation) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
+        if (operation == "/") {
+            return ((float) a / (float) b);
+        } else if (operation == "+") {
+            return ((float) a + (float) b);
+        } else if (operation == "-") {
+            return ((float) a - (float) b);
+        } else if (operation == "*") {
+            return ((float) a * (float) b);
+        }
         return 0;
     }
 
