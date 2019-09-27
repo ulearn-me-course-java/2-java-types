@@ -16,8 +16,8 @@ public class Task12 {
         }
         return sum;
         */
-
-        return BigDecimal.ZERO;
+        sum = sum.add(sum.multiply(percent));
+        return sum.setScale(9, BigDecimal.ROUND_HALF_UP);
     }
 
     public static void main(String[] args) {
