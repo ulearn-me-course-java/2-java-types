@@ -16,7 +16,9 @@ public class Task12 {
         }
         return sum;
         */
-        sum = sum.add(sum.multiply(percent));
+        for (int i = 1; i <= 12; i++) {
+            sum = sum.add(sum.multiply(percent));
+        }
         return sum.setScale(9, BigDecimal.ROUND_HALF_UP);
     }
 
