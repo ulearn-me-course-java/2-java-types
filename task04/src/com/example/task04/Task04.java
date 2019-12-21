@@ -9,8 +9,10 @@ public class Task04 {
             return a * b;
         } else if (operation == "+") {
             return a + b;
-        } else {
+        } else if (operation == "-") {
             return a - b;
+        } else {
+            return 0;
         }
     }
 
