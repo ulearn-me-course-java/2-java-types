@@ -8,7 +8,6 @@ public class Task08 {
         float x = Float.POSITIVE_INFINITY;
         return x == x + 1;
     }
-
     public static void main(String[] args) {
         System.out.println(solution());
     }
