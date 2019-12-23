@@ -3,10 +3,7 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        return Integer.toString(x+y).replace("-", "").length();
     }
 
     public static void main(String[] args) {
@@ -16,6 +13,7 @@ public class Task06 {
         int result = solution(12, 34);
         System.out.println(result);
         */
+        System.out.println(solution(-111, -222));
     }
 
 }
