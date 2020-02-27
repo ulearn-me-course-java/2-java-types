@@ -3,19 +3,26 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
+        try{
+            long number = Long.parseLong(input);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+            if (number <= Byte.MAX_VALUE && number >= Byte.MIN_VALUE)
+                return "byte";
+            else if (number <= Short.MAX_VALUE && number >= Short.MIN_VALUE)
+                return "short";
+            else if (number <= Integer.MAX_VALUE && number >= Integer.MIN_VALUE)
+                return  "int";
+            else
+                return "long";
+        }
+        catch (Exception e){
+            return "unable to parse";
+        }
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
+        String result = solution("-smthincorrect456");
         System.out.println(result);
-         */
     }
 
 }
