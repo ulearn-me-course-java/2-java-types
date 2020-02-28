@@ -3,10 +3,17 @@ package com.example.task04;
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
+        float ans = 0;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        if (operation == "+")
+            ans = a + b;
+        else if (operation == "-")
+            ans = a - b;
+        else if (operation == "/")
+            ans = (float) a / b;
+        else if (operation == "*")
+            ans = a * b;
+        return ans;
     }
 
     public static void main(String[] args) {
