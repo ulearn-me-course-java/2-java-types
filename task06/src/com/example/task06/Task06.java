@@ -5,7 +5,7 @@ public class Task06 {
     public static int solution(int x, int y) {
         int num = x + y;
         int kol = 0;
-        while (num>-1){
+        while (num != 0){
             x/=10;
             kol++;
         }
