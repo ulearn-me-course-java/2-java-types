@@ -8,19 +8,19 @@ class TypeInfo implements Comparable<TypeInfo> {
     public final int countByte;
     public final String name;
 
-    TypeInfo(BigInteger maxValue, String name, int countByte) {
-        this.minValue = maxValue.negate().subtract(BigInteger.ONE);
+    TypeInfo(BigInteger maxValue, BigInteger minValue, String name, int countByte) {
+        this.minValue = minValue;
         this.maxValue = maxValue;
         this.name = name;
         this.countByte = countByte;
 
     }
 
-    TypeInfo(long maxValue, String name, int countByte) {
+    TypeInfo(long maxValue, long minValue, String name, int countByte) {
         this.maxValue = BigInteger.valueOf(maxValue);
+        this.minValue = BigInteger.valueOf(minValue);
         this.name = name;
         this.countByte = countByte;
-        this.minValue = BigInteger.valueOf(-maxValue - 1);
     }
 
     public boolean check(BigInteger number) {
@@ -28,10 +28,10 @@ class TypeInfo implements Comparable<TypeInfo> {
     }
 
     public static TypeInfo[] getDefaultType() {
-        TypeInfo byteInfo = new TypeInfo(Byte.MAX_VALUE, "byte", Byte.BYTES);
-        TypeInfo shortInfo = new TypeInfo(Short.MAX_VALUE, "short", Short.BYTES);
-        TypeInfo intInfo = new TypeInfo(Integer.MAX_VALUE, "int", Integer.BYTES);
-        TypeInfo longInfo = new TypeInfo(Long.MAX_VALUE, "long", Long.BYTES);
+        TypeInfo byteInfo = new TypeInfo(Byte.MAX_VALUE, Byte.MIN_VALUE, "byte", Byte.BYTES);
+        TypeInfo shortInfo = new TypeInfo(Short.MAX_VALUE, Short.MIN_VALUE, "short", Short.BYTES);
+        TypeInfo intInfo = new TypeInfo(Integer.MAX_VALUE, Integer.MIN_VALUE, "int", Integer.BYTES);
+        TypeInfo longInfo = new TypeInfo(Long.MAX_VALUE, Long.MIN_VALUE, "long", Long.BYTES);
         return new TypeInfo[]{byteInfo, shortInfo, intInfo, longInfo};
     }
 
