@@ -3,17 +3,21 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-        while(x > 0)
+        while(x >= 0)
         {
-            x = x % 10;
-            return "x";
+            if (x == 0)
+                return "TRUE";
+            int y = x % 10; //Получаем последнее число
+            if (y % 2 != 0) //Проверяем число на чётность
+               return "FALSE"; //Посылаем нахуй если ловим нечётное
+            x = x / 10; //Иначе затираем и идём дальше
         }
-        return "";
+        return "TRUE";
     }
 
     public static void main(String[] args) {
 
-        String result = solution(1235);
+        String result = solution(7222);
         System.out.println(result);
 
     }
