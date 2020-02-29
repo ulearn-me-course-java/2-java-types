@@ -5,11 +5,6 @@ import java.util.Arrays;
 
 public class Task02 {
 
-    static TypeInfo byteInfo = new TypeInfo(Byte.MAX_VALUE, "byte", Byte.BYTES);
-    static TypeInfo shortInfo = new TypeInfo(Short.MAX_VALUE, "short", Short.BYTES);
-    static TypeInfo intInfo = new TypeInfo(Integer.MAX_VALUE, "int", Integer.BYTES);
-    static TypeInfo longInfo = new TypeInfo(Long.MAX_VALUE, "long", Long.BYTES);
-    static TypeInfo[] defaultTypes = {byteInfo, shortInfo, intInfo, longInfo};
 
     public static String solution(String input, TypeInfo[] typesInfo) {
         BigInteger number = new BigInteger(input);
@@ -19,7 +14,7 @@ public class Task02 {
     }
 
     public static String solution(String input) {
-        return solution(input, defaultTypes);
+        return solution(input, TypeInfo.getDefaultType());
     }
 
 
