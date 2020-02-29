@@ -1,21 +1,31 @@
 package com.example.task02;
 
+import java.math.BigInteger;
+import java.util.Arrays;
+
 public class Task02 {
 
-    public static String solution(String input) {
+    static TypeInfo byteInfo = new TypeInfo(Byte.MAX_VALUE, "byte", Byte.BYTES);
+    static TypeInfo shortInfo = new TypeInfo(Short.MAX_VALUE, "short", Short.BYTES);
+    static TypeInfo intInfo = new TypeInfo(Integer.MAX_VALUE, "int", Integer.BYTES);
+    static TypeInfo longInfo = new TypeInfo(Long.MAX_VALUE, "long", Long.BYTES);
+    static TypeInfo[] defaultTypes = {byteInfo, shortInfo, intInfo, longInfo};
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+    public static String solution(String input, TypeInfo[] typesInfo) {
+        BigInteger number = new BigInteger(input);
+        Arrays.sort(typesInfo);
+        for (TypeInfo type : typesInfo) if (type.check(number)) return type.name;
+        throw new IllegalArgumentException("too big number");
     }
+
+    public static String solution(String input) {
+        return solution(input, defaultTypes);
+    }
+
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
+        String result = solution("1111111111111111111111111111111111111111111111111111111111111");
         System.out.println(result);
-         */
     }
-
 }
+
