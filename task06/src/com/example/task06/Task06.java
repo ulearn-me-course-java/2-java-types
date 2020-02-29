@@ -3,10 +3,8 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int sum=x+y;
+        return(sum == 0) ? 1 : (int) Math.ceil(Math.log10(Math.abs(sum) + 0.5));
     }
 
     public static void main(String[] args) {
