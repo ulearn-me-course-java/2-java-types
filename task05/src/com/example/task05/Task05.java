@@ -4,8 +4,11 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        if (x>=0 & x<=9999 & x % 2 ==1) {
-            return "FALSE";
+        while (x>=10){
+            if (x % 2 == 1){
+                return "FALSE";
+            }
+            x = x / 10;
         }
         return "TRUE";
     }
