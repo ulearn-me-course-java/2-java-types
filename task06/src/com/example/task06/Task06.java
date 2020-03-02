@@ -6,7 +6,7 @@ public class Task06 {
         int num = x + y;
         int kol = 0;
         do {
-            x /= 10;
+            num /= 10;
             kol++;
         }
         while (num != 0);
