@@ -3,8 +3,8 @@ package com.example.task08;
 public class Task08 {
 
     public static boolean solution() {
-        //double x = Double.NEGATIVE_INFINITY;
-        double x = Double.POSITIVE_INFINITY;
+        double x = Double.NEGATIVE_INFINITY;
+        //double x = Double.POSITIVE_INFINITY;
 
         return x == x + 1;
     }
