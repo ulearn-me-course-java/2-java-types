@@ -5,6 +5,7 @@ public class Task07 {
     public static int solution(int n, int m, int k) {
         int n_count = n / k;
         int m_count = m / k;
+
         return n_count * m_count;
     }
 
