@@ -17,7 +17,12 @@ public class Task12 {
         return sum;
         */
 
-        return BigDecimal.ZERO;
+       //return BigDecimal.ZERO;
+
+        for (int i = 1; i <= 12; i++) {
+            sum = sum.add(sum.multiply(percent)).setScale(9, BigDecimal.ROUND_HALF_UP);
+        }
+        return sum;
     }
 
     public static void main(String[] args) {
