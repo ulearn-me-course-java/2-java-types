@@ -6,7 +6,16 @@ public class Task06 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+         x = x + y;
+        x = Math.abs(x);
+        int count = 0;
+        do
+        {
+            x = x / 10;
+            count++;
+        }
+        while(x >= 1);
+        return count;
     }
 
     public static void main(String[] args) {
