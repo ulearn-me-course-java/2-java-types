@@ -1,5 +1,4 @@
 package com.example.task12;
-
 import java.math.BigDecimal;
 
 public class Task12 {
@@ -10,14 +9,14 @@ public class Task12 {
 
         // Считаем проценты за год
 
-        /*
+
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            sum = sum.add(sum.multiply(percent)); //сложить/добавить на процент за 12 мес.
+            sum = sum.setScale(9, BigDecimal.ROUND_HALF_UP); //setscale(кол-во цифр после "," , режим округления)
+                                                                      //работает и без этого, но необходима для границ
         }
         return sum;
-        */
 
-        return BigDecimal.ZERO;
     }
 
     public static void main(String[] args) {
