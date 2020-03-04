@@ -6,7 +6,7 @@ public class Task04 {
         if (operation=="+") return a+b;
         else if (operation=="-") return a-b;
         else if (operation=="*") return a*b;
-        else return a/b;
+        else return (float)a/b;
     }
 
     public static void main(String[] args) {
