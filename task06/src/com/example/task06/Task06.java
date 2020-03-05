@@ -3,10 +3,14 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        x += y;
+        y = 0;
+        if (x == 0) return 1;
+        while (x != 0) {
+            x /= 10;
+            y += 1;
+        }
+        return y;
     }
 
     public static void main(String[] args) {
