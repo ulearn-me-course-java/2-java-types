@@ -4,12 +4,9 @@ public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
 
-        if(a==0.0/0.0 && b==0.0/0.0) return true;
-        if(a==1.0/0.0 && b==1.0/0.0) return true;
-        double divider=Math.pow(10,precision);
-        a= (float) (Math.ceil(a*divider)/divider);
-        b= (float) (Math.ceil(b*divider)/divider);
-        return a == b;
+        if ((Double.isNaN(a) && Double.isNaN(b)) || Math.abs(a - b) < Math.pow(10, -precision))
+            return true;
+        return a==b;
     }
 
     public static void main(String[] args) {
