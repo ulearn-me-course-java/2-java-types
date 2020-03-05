@@ -2,26 +2,19 @@ package com.example.task11;
 
 public class Task11 {
 
-    public static float benefit(float sum, float percent) {
+  public static float benefit(float sum, float percent) {
+    return (float) (sum * Math.pow(1.0 + percent, 12));
+  }
 
-        // TODO исправьте функцию, чтобы избежать накопления ошибки
+  public static void main(String[] args) {
 
-        // Считаем проценты за год
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
-        }
-        return sum;
-    }
+    float sum = 500; // 500 руб. на счете
+    float percent = 0.00000001f; // 0.000001% ежемесячно
 
-    public static void main(String[] args) {
+    sum = benefit(sum, percent);
 
-        float sum = 500; // 500 руб. на счете
-        float percent = 0.00000001f; // 0.000001% ежемесячно
+    System.out.println("Сумма на счете через год: " + sum);
 
-        sum = benefit(sum, percent);
-
-        System.out.println("Сумма на счете через год: " + sum);
-
-    }
+  }
 
 }
