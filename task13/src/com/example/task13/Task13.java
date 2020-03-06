@@ -6,6 +6,7 @@ public class Task13 {
 
         // TODO привести букву к верхнему регистру
 
+        c -= 32;
         return c;
     }
 
