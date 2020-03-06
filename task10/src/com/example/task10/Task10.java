@@ -8,7 +8,16 @@ public class Task10 {
         // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
         // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
         
-        return a == b;
+       double esp = Math.pow(10,-precision);
+        if(Float.isNaN(a) && Float.isNaN(b))
+            return true;
+        if(Float.isInfinite(a) && Float.isInfinite(b))
+            if(Float.isNaN(a - b))
+            return true;
+            else
+            return Math.abs(a - b) < esp;
+        else
+            return Math.abs(a - b) < esp;
 
     }
 
