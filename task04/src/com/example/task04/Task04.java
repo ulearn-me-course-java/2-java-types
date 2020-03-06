@@ -6,7 +6,25 @@ public class Task04 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        float result = 0.1f;
+        if(operation == "+")
+        {
+         result = a + b;
+        }
+        if(operation == "-")
+        {
+            result = a - b;
+        }
+        if(operation == "/")
+        {
+            result = (float)a / b ;
+        }
+        if(operation == "*")
+        {
+            result = (float)a * b;
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {
