@@ -6,7 +6,9 @@ public class Task03 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        centimetre = centimetre / 100;
+
+        return centimetre;
     }
 
     public static void main(String[] args) {
