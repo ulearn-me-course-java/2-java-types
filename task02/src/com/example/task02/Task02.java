@@ -1,21 +1,25 @@
 package com.example.task02;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 public class Task02 {
     public static String solution(String input) {
-        long number = Long.parseLong(input);
-        if (-128 <= number && number <= 127) {
+        long number;
+        try {
+            number = Long.parseLong(input);
+        } catch (Exception e) {
+            throw new NotImplementedException();
+        }
+
+        if (Byte.MIN_VALUE <= number && number <= Byte.MAX_VALUE) {
             return "byte";
         }
-        if (-32768 <= number && number <= 32767) {
+        if (Short.MIN_VALUE <= number && number <= Short.MAX_VALUE) {
             return "short";
         }
-        if (-2147483648 <= number && number <= 2147483647) {
+        if (Integer.MIN_VALUE <= number && number <= Integer.MAX_VALUE) {
             return "int";
         }
         return "long";
-    }
-
-    public static void main(String[] args) {
-
     }
 }
