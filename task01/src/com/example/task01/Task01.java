@@ -4,13 +4,7 @@ public class Task01 {
 
     public static String solution() {
 
-<<<<<<< Updated upstream
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "здесь какая-то неправильная строка";
-=======
         return "Я думаю, быть программистом - это круто";
->>>>>>> Stashed changes
     }
 
     public static void main(String[] args) {
