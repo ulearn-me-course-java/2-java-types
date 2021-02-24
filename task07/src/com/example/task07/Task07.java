@@ -1,4 +1,5 @@
 package com.example.task07;
+import java.math.*;
 
 public class Task07 {
 
@@ -6,16 +7,16 @@ public class Task07 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        return Math.round((n/k) * (m/k));
     }
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-        /*
-        int result = solution(10, 20, 5);
+
+        int result = solution(20, 50, 3);
         System.out.println(result);
-        */
+
     }
 
 }
