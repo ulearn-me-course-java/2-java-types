@@ -4,18 +4,24 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        long input1 = Long.parseLong(input);
+        if (borderIs(7, input1)) //input1 >= -2^7 && input1 <= (2^7)-1
+            return "byte";
+        else if (borderIs(15, input1))
+            return "short";
+        else if (borderIs(31, input1))
+            return "int";
+        else return "long";
+    }
 
-        return "";
+    public static boolean borderIs(int powOfBorder, long value) {
+        long border = (long) Math.pow(2, powOfBorder);
+        return value >= -border && value <= border - 1;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         String result = solution("12345");
         System.out.println(result);
-         */
     }
 
 }
