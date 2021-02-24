@@ -13,7 +13,6 @@ public class Task04 {
             case "/":
                 return (float) a / b;
         }
-
         return 0;
     }
 
