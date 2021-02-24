@@ -1,5 +1,7 @@
 package com.example.task10;
 
+import org.assertj.core.internal.bytebuddy.description.ModifierReviewable;
+
 public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
@@ -8,7 +10,7 @@ public class Task10 {
         // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
         // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
         
-        return a == b;
+        return (Math.abs(a - b) < 1f/Math.pow(10,precision)) || (Double.isNaN(a) && Double.isNaN(b)) || (a == Float.POSITIVE_INFINITY && b == Float.POSITIVE_INFINITY) || (a == Float.NEGATIVE_INFINITY && b == Float.NEGATIVE_INFINITY);
 
     }
 
