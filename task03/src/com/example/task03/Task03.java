@@ -12,7 +12,7 @@ public class Task03 {
         /*
         int result = getMetreFromCentimetre(345);
         System.out.println(result);
-         */
+        */
     }
 
 }
