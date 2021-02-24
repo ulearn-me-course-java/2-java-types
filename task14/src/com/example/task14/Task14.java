@@ -1,21 +1,22 @@
 package com.example.task14;
 
-import java.util.*;
-
 public class Task14 {
 
 
     public static int reverse(int value) {
 
-        String[] digits = String.valueOf(value).split("");
-        String resValue ="";
-        for (int i = digits.length-1; i >= 0; i--) {
-            resValue+=digits[i];
-        }
-        return Integer.parseInt(resValue);
+        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
+
+        return 0;
     }
 
     public static void main(String[] args) {
+        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
+        // например вот так:
+        /*
+        int result = reverse(345);
+        System.out.println(result);
+         */
     }
 
 
