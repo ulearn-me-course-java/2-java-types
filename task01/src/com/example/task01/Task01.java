@@ -10,8 +10,8 @@ public class Task01 {
     }
 
     public static void main(String[] args) {
-
-        System.out.println(solution());
+        String result = solution();
+        System.out.println(result);
 
     }
 
