@@ -10,7 +10,9 @@ public class Task02 {
             return "short";
         if (value <= Integer.MAX_VALUE && value >= Integer.MIN_VALUE)
             return "int";
-        return "long";
+        if (value <= Long.MAX_VALUE && value >= Long.MIN_VALUE)
+            return "long";
+        return "";
     }
 
     public static void main(String[] args) {
