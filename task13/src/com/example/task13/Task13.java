@@ -4,9 +4,10 @@ public class Task13 {
 
     public static char toUpperCase(char c) {
 
-        // TODO привести букву к верхнему регистру
+        return (char) (c - 32);
 
-        return c;
+        // Либо просто вызвать toUpperCase() метод класса Character
+        // return Character.toUpperCase(c);
     }
 
     public static void main(String[] args) {
