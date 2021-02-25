@@ -4,6 +4,7 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
+
         switch (operation) {
             case "+":
                 return a + b;
