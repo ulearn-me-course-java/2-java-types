@@ -6,7 +6,7 @@ import com.github.javaparser.ast.body.VariableDeclarator;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-public class Tests {
+class ATests {
 
     private void check(float sum, float percent, float result) {
         Assertions.assertThat(Task11.benefit(sum, percent)).as("sum = %s, percent = %s", sum, percent).isEqualTo(result);
