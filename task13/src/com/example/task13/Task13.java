@@ -4,8 +4,6 @@ public class Task13 {
 
     public static char toUpperCase(char c) {
 
-
-
         return Character.toUpperCase(c);
     }
 
