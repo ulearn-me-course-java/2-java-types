@@ -3,10 +3,11 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        String sum = Integer.toString(x+y);
+        if(sum.contains("-"))
+            return sum.length() - 1;
+        else
+            return sum.length();
     }
 
     public static void main(String[] args) {
