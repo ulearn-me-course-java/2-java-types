@@ -4,18 +4,12 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        return (x == 0) ? "TRUE" : x % 2 == 1 ? "FALSE" : solution(x / 10);
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         String result = solution(1234);
         System.out.println(result);
-        */
     }
 
 }
