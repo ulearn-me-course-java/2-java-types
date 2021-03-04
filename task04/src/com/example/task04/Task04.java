@@ -4,18 +4,27 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        float c;
 
-        return 0;
+        switch (operation) {
+            case "+":
+                a += b;
+                break;
+            case "-":
+                a -= b;
+                break;
+            case "*":
+                a *= b;
+                break;
+            case "/":
+                c = Float.parseFloat(String.valueOf(a)) / Float.parseFloat(String.valueOf(b));
+                return c;
+        }
+        return Float.parseFloat(String.valueOf(a));
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        float result = calculate(-25, 5, "/");
-        System.out.println(result);
-        */
+
     }
 
 }
