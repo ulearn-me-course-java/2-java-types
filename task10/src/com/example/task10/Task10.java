@@ -15,7 +15,6 @@ public class Task10 {
         float b = 0.4f;
         float sum = a + b;
         float c = 0.7f;
-
         boolean result = compare(sum, c, 2);
         System.out.println(result);
 
