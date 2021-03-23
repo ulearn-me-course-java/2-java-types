@@ -11,7 +11,7 @@ public class Tests {
     }
 
     @Test
-    public void testExamples() throws Exception {
+    public void testExamples() {
         check("5", "byte");
         check("-35000", "int");
         check("512", "short");
@@ -19,7 +19,7 @@ public class Tests {
     }
 
     @Test
-    public void testByte() throws Exception {
+    public void testByte() {
         check("0", "byte");
         check("1", "byte");
         check("100", "byte");
@@ -31,7 +31,7 @@ public class Tests {
     }
 
     @Test
-    public void testShort() throws Exception {
+    public void testShort() {
         check("130", "short");
         check("-130", "short");
         check("" + Short.MIN_VALUE, "short");
@@ -41,7 +41,7 @@ public class Tests {
     }
 
     @Test
-    public void testInt() throws Exception {
+    public void testInt() {
         check("100000", "int");
         check("-100000", "int");
         check("8000000", "int");
@@ -53,7 +53,7 @@ public class Tests {
     }
 
     @Test
-    public void testLong() throws Exception {
+    public void testLong() {
         check("4000000000", "long");
         check("-4000000000", "long");
         check("" + Long.MIN_VALUE, "long");
