@@ -3,9 +3,18 @@ package com.example.task04;
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
+        float af = (float)a;
+        float bf = (float)b;
+        switch (operation) {
+            case ("+"):
+                return af+bf;
+            case ("-"):
+                return af-bf;
+            case ("*"):
+                return af*bf;
+            case ("/"):
+                return af/bf;
+        }
         return 0;
     }
 
