@@ -4,18 +4,31 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        Float aFl = Float.valueOf(Integer.toString(a));
+        Float bFl = Float.valueOf(Integer.toString(b));
 
-        return 0;
+        switch (operation){
+            case Operands.Plus :
+                return aFl + bFl;
+            case Operands.Minus:
+                return aFl - bFl;
+            case Operands.Div:
+                return aFl / bFl;
+            case Operands.Mult:
+                return aFl * bFl;
+            default:
+                throw new IllegalStateException("Unexpected value: " + operation);
+        }    
+
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        float result = calculate(-25, 5, "/");
-        System.out.println(result);
-        */
+        System.out.println(calculate(-25, 5, "/"));
     }
-
+}
+class Operands{
+    public final static String Plus = "+";
+    public final static String Minus = "-";
+    public final static String Mult = "*";
+    public final static String Div = "/";
 }
