@@ -7,7 +7,7 @@ public class Tests {
 
 
     private void check(char input, char output) {
-        Assertions.assertThat(Task13.toUpperCase(input)).as("Input: \"%s\"", input).isEqualTo(output);
+        Assertions.assertThat(Task13.solution(input)).as("Input: \"%s\"", input).isEqualTo(output);
     }
 
     @Test
