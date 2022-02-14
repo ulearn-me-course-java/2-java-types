@@ -1,0 +1,50 @@
+[33mcommit af3509a7e45ccc6d9e4e9f01a0e9ea8bd6c94858[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/Task_2.11[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 8706b08 f3b7368
+Author: AnnyaKls <70793585+AnnyaKls@users.noreply.github.com>
+Date:   Mon Feb 14 14:01:57 2022 +0500
+
+    Merge pull request #1
+    
+    Task 2.2
+
+[33mcommit f3b73689c27766f940cc360abaff493795129c82[m[33m ([m[1;31morigin/Task_2.2[m[33m)[m
+Author: AnyaNek0 <16bitstreams@gmail.com>
+Date:   Mon Feb 14 13:53:46 2022 +0500
+
+    Task 2.2
+
+[33mcommit 56bca09da7bdf2a6224a0071455ac832c0a1d796[m[33m ([m[1;31morigin/Task_01[m[33m)[m
+Author: AnyaNek0 <16bitstreams@gmail.com>
+Date:   Mon Feb 14 13:34:58 2022 +0500
+
+    Task 01
+
+[33mcommit 8706b08734144ba3e37aecadc3015b2f3d0b4417[m
+Author: Boris Tarelkin <tarelkinba@gmail.com>
+Date:   Mon Sep 20 17:26:16 2021 +0500
+
+    Переход на более свежую версию gradle из-за необходимости перехода на java 11
+
+[33mcommit 1dfc3023911c96d30e9c2847b7904a925e3713dd[m
+Author: Boris Tarelkin <tarelkinba@gmail.com>
+Date:   Mon Sep 23 08:04:52 2019 +0500
+
+    Исправил версию jdk
+
+[33mcommit efe7bd8b4abd336e3aace8e461b6743622f7c2ac[m
+Author: Vladimir Polyakov <vladimir.p.polyakov@gmail.com>
+Date:   Sat Feb 16 14:39:07 2019 +0500
+
+    Create gradle-wrapper.properties
+
+[33mcommit 1a699f718a58f8e49e3ad34db5e54c68b238003d[m
+Author: Alexandr Dolgov <aydolgov@gmail.com>
+Date:   Fri Feb 15 23:14:13 2019 +0500
+
+    rootProject.name как имя репозитория
+
+[33mcommit 0844430933665b0cca360918c1272a8d641c241c[m
+Author: Alexandr Dolgov <aydolgov@gmail.com>
+Date:   Fri Feb 15 23:03:15 2019 +0500
+
+    initial commit
