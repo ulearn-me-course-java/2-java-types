@@ -1,7 +1,5 @@
 package com.example.task11;
 
-import java.text.NumberFormat;
-
 public class Task11 {
 
     public static float benefit(float sum, float percent) {
