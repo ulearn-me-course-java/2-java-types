@@ -11,7 +11,7 @@ public class Task06 {
             number /= 10;
             k++;
         }
-        return;
+        return k;
     }
 
     public static void main(String[] args) {
