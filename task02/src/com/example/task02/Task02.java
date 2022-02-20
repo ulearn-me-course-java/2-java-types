@@ -4,9 +4,25 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        try{
+            Byte.parseByte(input);
+            return "byte";
+        }
+        catch (Exception e) {
+            try{
+                Short.parseShort(input);
+                return "short";
+            }
+            catch (Exception e1){
+                try {
+                    Integer.parseInt(input);
+                    return "int";
+                }
+                catch (Exception e2) {
+                    return "long";
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
