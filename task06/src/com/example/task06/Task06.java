@@ -3,19 +3,20 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        long resultSum = x + y;
+        int countNumInResult = 0;
+        do {
+            countNumInResult++;
+            resultSum /= 10;
+        }
+        while (resultSum != 0);
+        return countNumInResult;
     }
 
+
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = solution(12, 34);
+        int result = solution(12, 3455);
         System.out.println(result);
-        */
     }
 
 }
