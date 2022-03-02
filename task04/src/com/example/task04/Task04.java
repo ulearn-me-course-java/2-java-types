@@ -5,8 +5,16 @@ public class Task04 {
     public static float calculate(int a, int b, String operation) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        float fa = (float)a;
+        float fb = (float)b;
 
-        return 0;
+        switch (operation) {
+            case "+" : return (fa + fb);
+            case "-" : return (fa - fb);
+            case "/" : return (fa / fb);
+            case "*" : return (fa * fb);
+        }
+        return -1f;
     }
 
     public static void main(String[] args) {
