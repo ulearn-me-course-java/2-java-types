@@ -6,16 +6,18 @@ public class Task13 {
 
         // TODO привести букву к верхнему регистру
 
-        return c;
+         String str = new String(String.valueOf(c).toUpperCase());
+        char toUp = str.charAt(0);
+        return toUp;
     }
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-        /*
+       
         char result = solution('x');
         System.out.println(result);
-         */
+         
     }
 
 }
