@@ -6,7 +6,7 @@ public class Task07 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return (m / k) * (n / k);
+        return 0;
     }
 
     public static void main(String[] args) {
