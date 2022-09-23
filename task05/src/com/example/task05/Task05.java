@@ -6,7 +6,13 @@ public class Task05 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return "FALSE";
+        int d = 10000;
+        for(int i = 0; i < 5; i++){
+            if ((x / d) % 2 != 0)
+                return "FALSE";
+            d /= 10;
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
