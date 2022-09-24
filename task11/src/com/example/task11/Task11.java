@@ -8,7 +8,7 @@ public class Task11 {
 
         // Считаем проценты за год
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            Math.pow(sum,percent);
         }
         return sum;
     }
