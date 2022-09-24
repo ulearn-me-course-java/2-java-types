@@ -5,10 +5,15 @@ public class Task11 {
     public static float benefit(float sum, float percent) {
 
         // TODO исправьте функцию, чтобы избежать накопления ошибки
-
+        float y=0f;
+        float x,c=0f;
         // Считаем проценты за год
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            y=sum*percent-c;
+            x=sum+y;
+            c=(x-sum)-y;
+            sum=x;
+            //sum += sum * percent;
         }
         return sum;
     }
