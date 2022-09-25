@@ -3,10 +3,15 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        int chislo = x;
+        while (chislo != 0) {
+            if (chislo % 2 == 0) {
+                chislo /= 10;
+            } else {
+                return "FALSE";
+            }
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
