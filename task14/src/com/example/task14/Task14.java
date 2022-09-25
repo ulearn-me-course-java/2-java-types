@@ -8,7 +8,6 @@ public class Task14 {
         String something = new StringBuilder(temp).reverse().toString();
         return Integer.parseInt(something);
     }
-
     public static void main(String[] args) {
         int result = reverse(345);
         System.out.println(result);
