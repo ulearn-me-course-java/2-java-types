@@ -7,7 +7,7 @@ public class Task11 {
         // TODO исправьте функцию, чтобы избежать накопления ошибки
 
         // Считаем проценты за год
-        float sumPercent = 0.0f, x = 0.0f, sumInaccuracy = 0.0f;
+        float sumPercent, x, sumInaccuracy = 0.0f;
             for (int i = 1; i <= 12; i++) {
                 sumPercent = sum *  percent - sumInaccuracy;
                 x = sum + sumPercent;
