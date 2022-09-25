@@ -3,22 +3,15 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-       if (x>0) {
-           x/=10;
-           if (x>0) {
-               x/=10;
-               if (x>0) {
-                   x/=10;
-                   if (x>0) {
-                       x/=10;
-                       if (x==0) {
-                           return  "True";
-                       }
-                   }
-               }
-           }
-       }
-       return "FALSE";
+        int chislo = x;
+        while (chislo != 0) {
+            if (chislo % 2 == 0) {
+                chislo /= 10;
+            } else {
+                return "FALSE";
+            }
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
