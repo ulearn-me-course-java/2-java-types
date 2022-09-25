@@ -1,9 +1,10 @@
 package com.example.task02;
-
+import java.util.Scanner;
 public class Task02 {
 
-    public static String Type(long num){
+    public static String solution(String input) {
 
+        long num = Long.parseLong(input);
         if (num < 128){
             return "byte";
         }
@@ -21,8 +22,8 @@ public class Task02 {
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
-        long num = in.nextLong();
-        String type = Type(num);
+        String num = in.nextLine();
+        String type = solution(num);
         System.out.println(type);
     }
 

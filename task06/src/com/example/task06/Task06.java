@@ -1,5 +1,5 @@
 package com.example.task06;
-
+import java.util.Scanner;
 public class Task06 {
 
     public static int digitCounter(int a, int b){

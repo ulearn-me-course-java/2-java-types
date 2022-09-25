@@ -1,5 +1,5 @@
 package com.example.task07;
-
+import java.util.Scanner;
 public class Task07 {
 
     public static int countTents(int n, int m, int k){

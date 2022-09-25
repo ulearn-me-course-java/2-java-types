@@ -1,5 +1,5 @@
 package com.example.task04;
-
+import java.util.Scanner;
 public class Task04 {
 
     public static double calculate(int a, int b, String operand){

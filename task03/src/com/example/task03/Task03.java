@@ -1,5 +1,5 @@
 package com.example.task03;
-
+import java.util.Scanner;
 public class Task03 {
     public static int getMetreFromCentimetre(int centimetre){
         return centimetre/100;

@@ -1,5 +1,5 @@
 package com.example.task05;
-
+import java.util.Scanner;
 public class Task05 {
 
     public static boolean parityCheck(int num){
