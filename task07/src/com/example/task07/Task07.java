@@ -3,10 +3,11 @@ package com.example.task07;
 public class Task07 {
 
     public static int solution(int n, int m, int k) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        try {
+            return (n / k) * (m / k);
+        } catch (ArithmeticException e) {
+            return Integer.MAX_VALUE;
+        }
     }
 
     public static void main(String[] args) {
