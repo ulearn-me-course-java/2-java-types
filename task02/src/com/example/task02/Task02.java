@@ -3,10 +3,24 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        long lg = Long.parseLong(input);
+        int in = (int)lg;
+        if (lg == in){
+            short sh = (short) in;
+                if (in == sh){
+                byte bt = (byte) sh;
+                    if(sh == bt){
+                        return "byte";
+                    }
+                    else {
+                        return "short";
+                    }
+                }
+                else{
+                    return "int";
+                }
+            }
+        return "long";
     }
 
     public static void main(String[] args) {
