@@ -1,21 +1,21 @@
 package com.example.task13;
 
+import java.util.Scanner;
+
 public class Task13 {
 
     public static char toUpperCase(char c) {
 
-        // TODO привести букву к верхнему регистру
-
-        return c;
+        return (char)(int)(c-32);
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        char result = solution('x');
-        System.out.println(result);
-         */
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Letter = ");
+        char l = in.next().charAt(0);
+
+        System.out.print(toUpperCase(l));
     }
 
 }

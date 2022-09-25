@@ -2,20 +2,28 @@ package com.example.task02;
 
 public class Task02 {
 
-    public static String solution(String input) {
+    public static String Type(long num){
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        if (num < 128){
+            return "byte";
+        }
+        else if (num < 32768){
+            return "short";
+        }
+        else if (num < 2147483647){
+            return "int";
+        }
+        else {
+            return "long";
+        }
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+    public static void main(String[] args){
+
+        Scanner in = new Scanner(System.in);
+        long num = in.nextLong();
+        String type = Type(num);
+        System.out.println(type);
     }
 
 }
