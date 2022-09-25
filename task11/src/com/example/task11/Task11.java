@@ -1,16 +1,18 @@
 package com.example.task11;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 public class Task11 {
 
     public static float benefit(float sum, float percent) {
 
         // TODO исправьте функцию, чтобы избежать накопления ошибки
-
+        float okp = 0.0f;
         // Считаем проценты за год
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+             okp += sum * percent;
         }
-        return sum;
+        return sum+okp;
     }
 
     public static void main(String[] args) {

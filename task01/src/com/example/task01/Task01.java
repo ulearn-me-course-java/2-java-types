@@ -4,18 +4,16 @@ public class Task01 {
 
     public static String solution() {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        String phrase = "Я думаю, быть программистом - это круто";
 
-        return "здесь какая-то неправильная строка";
+        return phrase;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         String result = solution();
         System.out.println(result);
-         */
+
     }
 
 }

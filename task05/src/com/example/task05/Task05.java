@@ -3,19 +3,28 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        int a = 0;
+        int b = 0;
+        while (x != 0) {
+            if (x % 2 == 0) {
+                a++;
+            } else {
+                b++;
+            }
+            x = x / 10;
+        }
+        if(a>0 && b == 0){
+            return "True";
+        }else{
+            return "False";
+        }
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution(1234);
+
+        String result = solution(2144);
         System.out.println(result);
-        */
+
     }
 
 }
