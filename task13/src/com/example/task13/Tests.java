@@ -19,5 +19,4 @@ public class Tests {
         check('n', 'N');
         check('u', 'U');
     }
-
 }
