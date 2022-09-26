@@ -17,6 +17,7 @@ public class Task04 {
         else if (operation.equals("/") && bfl != 0)
             result = afl / bfl;
 
+        System.out.println(7.0f);
 
         return result;
     }
