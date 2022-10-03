@@ -1,13 +1,12 @@
 package com.example.task14;
 
+import com.sun.org.apache.xpath.internal.operations.String;
+
 public class Task14 {
 
 
     public static int reverse(int value) {
-
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        return Integer.parseInt(new StringBuffer(Integer.toString(value)).reverse().toString());
     }
 
     public static void main(String[] args) {
