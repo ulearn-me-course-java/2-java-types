@@ -4,9 +4,12 @@ public class Task01 {
 
     public static String solution() {
 
+            String str = "Я думаю, быть программистом - это круто";
+            return str;
+
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return "здесь какая-то неправильная строка";
+
     }
 
     public static void main(String[] args) {
