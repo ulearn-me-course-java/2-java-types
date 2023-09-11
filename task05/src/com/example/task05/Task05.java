@@ -5,8 +5,13 @@ public class Task05 {
     public static String solution(int x) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        String string = Integer.toString(x);
+        int count = string.length();
 
-        return "FALSE";
+        for (char c: string.toCharArray())
+            if (c % 2 == 0) --count;
+
+        return count == 0 ? "TRUE" : "FALSE";
     }
 
     public static void main(String[] args) {
