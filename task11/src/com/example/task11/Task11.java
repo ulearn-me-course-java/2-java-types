@@ -6,9 +6,14 @@ public class Task11 {
 
         // TODO исправьте функцию, чтобы избежать накопления ошибки
 
-        // Считаем проценты за год
+        float cleanBenifits = 0f;
+        float x = 0f;
+        float error = 0f;
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            cleanBenifits = sum * percent - error;
+            x = sum + cleanBenifits;//нужно чтобы получить новое число с ошибкой для его последующего удаления
+            error = (x - sum) - cleanBenifits;
+            sum = x;
         }
         return sum;
     }
