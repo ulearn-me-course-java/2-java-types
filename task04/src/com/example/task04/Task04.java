@@ -1,21 +1,36 @@
 package com.example.task04;
-
+import java.util.Scanner;
 public class Task04 {
 
-    public static float calculate(int a, int b, String operation) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
+    public static double calculate(int a, int b, String operand){
+        switch(operand){
+            case "/":
+                return a/b;
+            case "*":
+                return a*b;
+            case "-":
+                return a-b;
+            case"+":
+                return a+b;
+            default:
+                System.out.print("Ошибка");
+                break;
+        }
         return 0;
     }
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        float result = calculate(-25, 5, "/");
-        System.out.println(result);
-        */
+        System.out.print("a = ");
+        int a = in.nextInt();
+
+        System.out.print("b = ");
+        int b = in.nextInt();
+
+        System.out.print("operand = ");
+        String operand = in.next();
+
+        System.out.println(calculate(a,b,operand));
     }
 
 }
