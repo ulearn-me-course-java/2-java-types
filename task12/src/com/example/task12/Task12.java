@@ -5,19 +5,12 @@ import java.math.BigDecimal;
 public class Task12 {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
-
-        // TODO раскомментируйте и исправьте код
-
-        // Считаем проценты за год
-
-        /*
+        BigDecimal profit = BigDecimal.valueOf(0);
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            BigDecimal result = sum.add(profit).multiply(percent);
+            profit = profit.add(result);
         }
-        return sum;
-        */
-
-        return BigDecimal.ZERO;
+        return sum.add(profit).setScale(9, BigDecimal.ROUND_HALF_UP);
     }
 
     public static void main(String[] args) {
