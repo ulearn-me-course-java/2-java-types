@@ -7,17 +7,18 @@ public class Task12 {
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
 
         // TODO раскомментируйте и исправьте код
-
-        // Считаем проценты за год
-
+        //BigDecimal sum1 = percent.add(new BigDecimal(1).pow(12));
+        //sum = sum.multiply(sum1);
+        // sum * Math.pow(1.0 + percent, 12)
+        sum = sum.multiply(percent.add(new BigDecimal(1)).pow(12));
         /*
         for (int i = 1; i <= 12; i++) {
             sum += sum * percent;
         }
         return sum;
         */
-
-        return BigDecimal.ZERO;
+        //round(new MathContext(4, RoundingMode.HALF_UP));
+        return sum.setScale(9, BigDecimal.ROUND_HALF_UP);
     }
 
     public static void main(String[] args) {
