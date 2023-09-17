@@ -8,20 +8,22 @@ public class Task10 {
         // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
         // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
 
-        if (Float.isNaN(a) || Float.isNaN(b)) {
-            return Float.isNaN(a) && Float.isNaN(b);
-        }
-        else if (a > 0 && b > 0) {
-                if (Float.isInfinite(a) && Float.isInfinite(b)) {
-                    return true;
-                }
-                return Math.abs(a - b) < Math.pow(10, -precision);
-            }
-        else if (a >= 0 && b <= 0) {
+        if (a == Float.POSITIVE_INFINITY  && b == Float.POSITIVE_INFINITY)
+            return true;
+        if (a == Float.NEGATIVE_INFINITY  && b == Float.NEGATIVE_INFINITY)
+            return true;
+
+        if (Float.isInfinite(Math.abs(a)) || Float.isInfinite(Math.abs(b)))
             return false;
-            }
-        else
-            return !(a <= 0) || !(b >= 0);
+
+        if (Float.isNaN(Math.abs(a)) && Float.isNaN(b))
+            return true;
+        if (Float.isNaN(Math.abs(a)) || Float.isNaN(Math.abs(b)))
+            return false;
+
+        if (Math.abs(a-b) < 1/Math.pow(10, precision))
+            return true;
+        return false;
     }
 
     public static void main(String[] args) {
