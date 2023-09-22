@@ -2,20 +2,34 @@ package com.example.task02;
 
 public class Task02 {
 
-    public static String solution(String input) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+    public  static boolean check(int degree, double num)
+    {
+        double max = Math.pow(2, degree) - 1;
+        double min = -Math.pow(2, degree);
+        return num >= min & num <= max;
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+    public static String solution(String input)
+    {
+        double num = Double.parseDouble((input));
+        if(check(7, num)){
+            return "byte";
+        }
+        else if (check(15, num))
+        {
+            return "short";
+        }
+        else if (check(31, num)) {
+            return "int";
+        }
+        else {
+            return "long";
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        solution("-35000");
     }
 
 }
