@@ -4,9 +4,11 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int a = n / k;
+        int b = m / k;
+        int amount = a * b;
 
-        return 0;
+        return amount;
     }
 
     public static void main(String[] args) {

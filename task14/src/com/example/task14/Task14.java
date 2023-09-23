@@ -3,11 +3,16 @@ package com.example.task14;
 public class Task14 {
 
 
-    public static int reverse(int value) {
+    public static int reverse(int value) throws NumberFormatException {
+        try {
+            StringBuilder sB = new StringBuilder(new Integer(value).toString());
+            sB = sB.reverse();
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+            return Integer.parseInt(sB.toString());
+        } catch(NumberFormatException ex) {
+            System.out.println(ex + " - exception caught!");
+            return 0;
+        }
     }
 
     public static void main(String[] args) {
