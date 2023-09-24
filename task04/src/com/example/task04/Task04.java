@@ -4,8 +4,6 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
         float NumA = (float)a;
         float NumB = (float)b;
         switch (operation){

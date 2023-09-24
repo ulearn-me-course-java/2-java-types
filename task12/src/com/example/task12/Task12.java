@@ -7,10 +7,6 @@ public class Task12 {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
 
-        // TODO раскомментируйте и исправьте код
-
-        // Считаем проценты за год
-
         return BigDecimal.valueOf((sum.floatValue() * Math.pow(percent.floatValue() + 1.0, 12))).setScale(9, RoundingMode.HALF_UP);
     }
 
