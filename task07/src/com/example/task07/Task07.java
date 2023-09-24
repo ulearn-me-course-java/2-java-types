@@ -3,10 +3,9 @@ package com.example.task07;
 public class Task07 {
 
     public static int solution(int n, int m, int k) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int width = m/k;
+        int height = n/k;
+        return width * height;
     }
 
     public static void main(String[] args) {

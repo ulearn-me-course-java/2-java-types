@@ -3,10 +3,12 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int z = x + y;
+        int len = String.valueOf(z).length();
+        if(String.valueOf(z).contains("-")){
+            len--;
+        }
+        return len;
     }
 
     public static void main(String[] args) {
