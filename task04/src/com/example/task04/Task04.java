@@ -1,20 +1,17 @@
 package com.example.task04;
-
-import java.util.Objects;
-
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        if (Objects.equals(operation, "+")) {
+        if (operation.equals("+")) {
             return (float) a + b;
         }
-        if (Objects.equals(operation, "-")) {
+        if (operation.equals("-")) {
             return (float) a - b;
         }
-        if (Objects.equals(operation, "*")) {
+        if (operation.equals("*")) {
             return (float) a * b;
         }
         return (float) a / b;
