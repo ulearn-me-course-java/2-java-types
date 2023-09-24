@@ -3,10 +3,23 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        int c = 0;
+        int test = x;
+        while (x > 0) {
+            test = x % 10;
+            if (test % 2 == 0) {
+                x = x / 10;
+                continue;
+            }
+            else {
+                c = 1;
+                break;
+            }
+        }
+        if (c == 1) {
+            return "FALSE";
+        }
+        else return "TRUE";
     }
 
     public static void main(String[] args) {
