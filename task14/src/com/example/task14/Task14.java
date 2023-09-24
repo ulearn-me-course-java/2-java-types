@@ -4,19 +4,22 @@ public class Task14 {
 
 
     public static int reverse(int value) {
+        if (value < 0) {
+            return -1;
+        }
+        String valueStr = Integer.toString(value);
+        String reversedStr = new StringBuilder(valueStr).reverse().toString();
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        try {
+            return Integer.parseInt(reversedStr);
+        } catch (NumberFormatException e) {
+            return -1;
+        }
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = reverse(345);
+        int result = reverse(5432);
         System.out.println(result);
-         */
     }
 
 
