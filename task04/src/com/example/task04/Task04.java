@@ -14,6 +14,7 @@ public class Task04 {
         if (operation.equals("*")) {
             return (float) a * b;
         }
+
         return (float) a / b;
     }
 
