@@ -1,7 +1,7 @@
 package com.example.task04;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 
 public class Tests {
