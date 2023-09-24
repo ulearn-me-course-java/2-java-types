@@ -3,19 +3,36 @@ package com.example.task04;
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
+        float result = 0;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        switch (operation) {
+            case "+":
+                result = a + b;
+                break;
+            case "-":
+                result = a - b;
+                break;
+            case "*":
+                result = a * b;
+                break;
+            case "/":
+                if (b != 0) {
+                    result = (float) a / b;
+                } else {
+                    System.out.println("Ошибка: деление на ноль.");
+                }
+                break;
+            default:
+                System.out.println("Ошибка: недопустимая операция.");
+                break;
+        }
 
-        return 0;
+        return result;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        float result = calculate(-25, 5, "/");
+        float result = calculate(-123, 0, "/");
         System.out.println(result);
-        */
     }
 
 }
