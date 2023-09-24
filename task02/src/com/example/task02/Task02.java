@@ -3,10 +3,17 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
+        long number = Long.parseLong(input);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        if (number >= Byte.MIN_VALUE && number <= Byte.MAX_VALUE){
+            return "byte";
+        } else if (number >= Short.MIN_VALUE && number <= Short.MAX_VALUE) {
+            return "short";
+        } else if (number >= Integer.MIN_VALUE && number <= Integer.MAX_VALUE) {
+            return "int";
+        }
 
-        return "";
+        return "long";
     }
 
     public static void main(String[] args) {
@@ -15,7 +22,7 @@ public class Task02 {
         /*
         String result = solution("12345");
         System.out.println(result);
-         */
+        */
     }
 
 }
