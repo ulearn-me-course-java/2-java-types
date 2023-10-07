@@ -4,9 +4,11 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int sum = x + y;
+        if (sum < 0) {
+            return String.valueOf(sum).length() - 1;
+        } else
+            return String.valueOf(sum).length();
     }
 
     public static void main(String[] args) {
