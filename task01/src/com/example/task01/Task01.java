@@ -6,7 +6,7 @@ public class Task01 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return "здесь какая-то неправильная строка";
+        return "I think that's cool to be a programmer!";
     }
 
     public static void main(String[] args) {
@@ -16,6 +16,9 @@ public class Task01 {
         String result = solution();
         System.out.println(result);
          */
+        String result = solution();
+        System.out.println(result);
+
     }
 
 }
