@@ -3,19 +3,33 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
+        try {
+            Byte.parseByte(input);
+            return "byte";
+        }
+        catch (NumberFormatException e){}
+        try {
+            Short.parseShort(input);
+            return "short";
+        }
+        catch (NumberFormatException e){}
+        try {
+            Integer.parseInt(input);
+            return "int";
+        }
+        catch (NumberFormatException e){}
+        try {
+            Long.parseLong(input);
+            return "long";
+        }
+        catch (NumberFormatException e){}
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        return null;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         String result = solution("12345");
         System.out.println(result);
-         */
     }
 
 }
