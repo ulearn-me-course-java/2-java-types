@@ -4,7 +4,7 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        int tmp = 0;
+        int tmp;
 
         while (x > 0){
             tmp = x % 10;
