@@ -3,28 +3,24 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
-        try {
-            Byte.parseByte(input);
-            return "byte";
-        }
-        catch (NumberFormatException e){}
-        try {
-            Short.parseShort(input);
-            return "short";
-        }
-        catch (NumberFormatException e){}
-        try {
-            Integer.parseInt(input);
-            return "int";
-        }
-        catch (NumberFormatException e){}
-        try {
-            Long.parseLong(input);
-            return "long";
-        }
-        catch (NumberFormatException e){}
+        String type = "";
 
-        return null;
+        try {
+            Long.valueOf(input);
+            type = "long";
+
+            Integer.valueOf(input);
+            type = "int";
+
+            Short.valueOf(input);
+            type = "short";
+
+            Byte.valueOf(input);
+            type = "byte";
+
+        } catch (Exception ex) {}
+
+        return type;
     }
 
     public static void main(String[] args) {
