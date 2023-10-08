@@ -1,21 +1,30 @@
 package com.example.task02;
 
+import java.io.Console;
+
 public class Task02 {
 
     public static String solution(String input) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return "";
+        long inputNumber = Long.parseLong(input);
+
+        if(Integer.MIN_VALUE <= inputNumber && inputNumber <= Integer.MAX_VALUE){
+            if(Short.MIN_VALUE <= inputNumber && inputNumber <= Short.MAX_VALUE){
+                if(Byte.MIN_VALUE <= inputNumber && inputNumber <= Byte.MAX_VALUE){
+                    return "byte";
+                }
+                return "short";
+            }
+            return "int";
+        }
+        return "long";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
-    }
 
+        String result = solution("100000");
+        System.out.println(result);
+    }
 }
