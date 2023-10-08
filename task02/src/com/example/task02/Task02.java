@@ -3,10 +3,12 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        long fromString = Long.parseLong(input);
+        if (fromString >= Byte.MIN_VALUE && fromString <= Byte.MAX_VALUE) return "byte";
+        else if (fromString >= Short.MIN_VALUE && fromString <= Short.MAX_VALUE) return "short";
+        else if (fromString >= Integer.MIN_VALUE && fromString <= Integer.MAX_VALUE) return "int";
+        else if (fromString >= Long.MIN_VALUE && fromString <= Long.MAX_VALUE) return "long";
+        return "error";
     }
 
     public static void main(String[] args) {
