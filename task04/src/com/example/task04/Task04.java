@@ -2,20 +2,29 @@ package com.example.task04;
 
 public class Task04 {
 
-    public static float calculate(int a, int b, String operation) {
+    public static float calculate(int a, int b, String operation)
+    {
+        float argument1 = (float) a;
+        float argument2 = (float) b;
+        switch (operation)
+        {
+            case "+":
+                return argument1 + argument2;
+            case "-":
+                return argument1 - argument2;
+            case "*":
+                return argument1 * argument2;
+            case "/":
+                return argument1 / argument2;
+            default:
+                return Float.NaN;
+        }
+    }
+        public static void main (String[] args)
+        {
+            float result = calculate(-25, 5, "/");
+            System.out.println(result);
+        }
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        float result = calculate(-25, 5, "/");
-        System.out.println(result);
-        */
-    }
-
-}
