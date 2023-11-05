@@ -3,11 +3,14 @@ package com.example.task08;
 public class Task08 {
 
     public static boolean solution() {
-        float x = 3.4e37f;
+        // TODO измените тип и значение переменной x, чтобы возвращалось значение true
+
+        double x = Double.POSITIVE_INFINITY;
         return x == x + 1;
     }
 
     public static void main(String[] args) {
+        // Здесь вы можете вручную протестировать ваше решение
         System.out.println(solution());
     }
 

@@ -4,14 +4,14 @@ public class Task06 {
 
     public static int solution(int x, int y) {
         int sum = x + y;
-        int count = 0;
+        int answer = 0;
         if (sum == 0)
             return 1;
         while (sum != 0) {
+            answer ++;
             sum /= 10;
-            count++;
         }
-        return count;
+        return answer;
     }
 
     public static void main(String[] args) {
