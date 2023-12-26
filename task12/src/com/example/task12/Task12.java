@@ -10,14 +10,16 @@ public class Task12 {
 
         // Считаем проценты за год
 
-        /*
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
-        }
-        return sum;
-        */
 
-        return BigDecimal.ZERO;
+        /*  for (int i = 1; i <= 12; i++) {
+            sum = sum * (1 + percent);
+        }*/
+        // return sum;
+        BigDecimal result = percent.add(BigDecimal.valueOf(1));
+        BigDecimal result1 = result.pow(12);
+        BigDecimal result2 = result1.multiply(sum);
+        return result2.setScale(9, BigDecimal.ROUND_HALF_UP);
+        // return BigDecimal.ZERO;
     }
 
     public static void main(String[] args) {
