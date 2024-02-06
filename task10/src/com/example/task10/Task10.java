@@ -3,6 +3,7 @@ package com.example.task10;
 public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
+
         if (Float.isNaN(a) && Float.isNaN(b)) {
             return true;
         }

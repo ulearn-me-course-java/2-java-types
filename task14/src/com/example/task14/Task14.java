@@ -15,7 +15,6 @@ public class Task14 {
 
         int result = reverse(345);
         System.out.println(result);
-
     }
 
 
