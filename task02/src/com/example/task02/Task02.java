@@ -3,10 +3,25 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
+        String out = "";
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        try {
+            Long.valueOf(input);
+            out = "long";
 
-        return "";
+            Integer.valueOf(input);
+            out = "int";
+
+            Short.valueOf(input);
+            out = "short";
+
+            Byte.valueOf(input);
+            out = "byte";
+        } catch (Exception ignored) {
+
+        }
+
+        return out;
     }
 
     public static void main(String[] args) {
