@@ -1,12 +1,23 @@
 package com.example.task06;
 
+import java.sql.SQLOutput;
+
 public class Task06 {
 
     public static int solution(int x, int y) {
+        int digitsCount = 0;
+        int sumOfNumbers = x + y;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        if (sumOfNumbers == 0){
+            return  1;
+        }
 
-        return 0;
+        while (sumOfNumbers != 0){
+            digitsCount += 1;
+            sumOfNumbers /= 10;
+        }
+
+        return digitsCount;
     }
 
     public static void main(String[] args) {
