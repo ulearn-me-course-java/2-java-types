@@ -4,13 +4,12 @@ public class Task11 {
 
     public static float benefit(float sum, float percent) {
 
-        // TODO исправьте функцию, чтобы избежать накопления ошибки
+        int months = 12;
+        float yearlyRate = 1 + percent;
 
-        // Считаем проценты за год
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
-        }
-        return sum;
+        float finalSum = (float) (sum * Math.pow(yearlyRate, months));
+
+        return finalSum;
     }
 
     public static void main(String[] args) {

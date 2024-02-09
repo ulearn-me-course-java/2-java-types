@@ -4,9 +4,10 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int widht = n / k;
+        int height = m / k;
 
-        return 0;
+        return widht * height;
     }
 
     public static void main(String[] args) {
