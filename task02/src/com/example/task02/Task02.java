@@ -10,7 +10,7 @@ public class Task02 {
             return "byte";
         else if (num <= 32767 && num >= -32768)
             return "short";
-        else if (num>= -2147483648 && num <= 2147483647)
+        else if (num >= -2147483648 && num <= 2147483647)
             return "int";
         else return "long";
     }
