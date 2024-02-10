@@ -9,15 +9,9 @@ public class Task12 {
         // TODO раскомментируйте и исправьте код
 
         // Считаем проценты за год
+        BigDecimal result = sum.multiply(percent.add(BigDecimal.valueOf(1)).pow(12));
+        return result.setScale(9, BigDecimal.ROUND_HALF_UP);
 
-        /*
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
-        }
-        return sum;
-        */
-
-        return BigDecimal.ZERO;
     }
 
     public static void main(String[] args) {
