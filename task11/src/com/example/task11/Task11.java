@@ -4,12 +4,8 @@ public class Task11 {
 
     public static float benefit(float sum, float percent) {
 
-        int months = 12;
-        float yearlyRate = 1 + percent;
+        return (float) (sum * Math.pow(1.0 + percent, 12));
 
-        float finalSum = (float) (sum * Math.pow(yearlyRate, months));
-
-        return finalSum;
     }
 
     public static void main(String[] args) {
