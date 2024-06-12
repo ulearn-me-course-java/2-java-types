@@ -6,8 +6,6 @@ public class Task12 {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
 
-        // TODO раскомментируйте и исправьте код
-
         // Считаем проценты за год
 
         /*

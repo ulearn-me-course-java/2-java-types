@@ -3,19 +3,22 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
+        while (x != 0) {
+            int lastDig = x % 10;
+            x /= 10;
+            if (!isEven(lastDig))
+                return "FALSE";
+        }
+        return "TRUE";
+    }
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+    public  static boolean isEven(int dig){
+        return dig % 2 == 0;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         String result = solution(1234);
         System.out.println(result);
-        */
     }
 
 }
