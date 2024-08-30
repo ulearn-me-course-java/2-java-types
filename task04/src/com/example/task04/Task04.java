@@ -4,9 +4,26 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        float result;
 
-        return 0;
+        switch (operation){
+            case "+":
+                result = a + b;
+                break;
+            case "-":
+                result = a - b;
+                break;
+            case "*":
+                result = a * b;
+                break;
+            case "/":
+                result = (float) a / b;
+                break;
+            default:
+                result = Float.NaN;
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {
