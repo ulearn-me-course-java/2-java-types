@@ -4,9 +4,14 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        boolean allEven = true;
 
-        return "FALSE";
+        while (x != 0 && allEven) {
+            if (x % 2 == 1) allEven = false;
+            x /= 10;
+        }
+
+        return allEven ? "TRUE" : "FALSE";
     }
 
     public static void main(String[] args) {
