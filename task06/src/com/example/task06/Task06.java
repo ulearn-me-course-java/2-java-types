@@ -3,10 +3,8 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int sum = Math.abs(x+y);
+        return (String.valueOf(sum).length());
     }
 
     public static void main(String[] args) {
