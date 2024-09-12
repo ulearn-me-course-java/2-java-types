@@ -4,18 +4,27 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int sum = x + y;
+        int counter = 0;
 
-        return 0;
+        if (sum == 0){
+            counter = 1;
+        }
+        else {
+            while (Math.abs(sum) > 0){
+                counter ++;
+                sum = sum / 10;
+            }
+        }
+
+        return counter;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         int result = solution(12, 34);
         System.out.println(result);
-        */
+
     }
 
 }

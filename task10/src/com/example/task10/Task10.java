@@ -4,12 +4,24 @@ public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
 
-        // TODO корректно сравнивать два значения типа float с заданной пользователем точностью (параметр - количество знаков после запятой).
-        // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
-        // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
-        
-        return a == b;
+        if (Float.isNaN(a) && Float.isNaN(b)) {
+            return true;
+        }
 
+        if (Float.isInfinite(a) && Float.isInfinite(b)) {
+            return a == b;
+        }
+
+        double diff = Math.abs(a - b);
+
+
+        double threshold;
+        if (precision == 0) {
+            threshold = 0;
+        } else {
+            threshold = Math.pow(10, -precision);
+        }
+        return diff <= threshold;
     }
 
     public static void main(String[] args) {
@@ -21,6 +33,10 @@ public class Task10 {
         boolean result = compare(sum, c, 2);
         System.out.println(result);
 
+        float x = 1.0f;
+        float y = 2.0f;
+        result = compare(x, y, 0);
+        System.out.println(result); // Вывод: false
     }
 
 }
