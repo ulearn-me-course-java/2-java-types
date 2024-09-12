@@ -7,9 +7,8 @@ public class Task10 {
         // TODO корректно сравнивать два значения типа float с заданной пользователем точностью (параметр - количество знаков после запятой).
         // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
         // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
-        
-        return a == b;
 
+        return  (Math.abs(a - b) < 1f/Math.pow(10,precision)) || (Double.isNaN(a) && Double.isNaN(b)) || (a == Float.POSITIVE_INFINITY && b == Float.POSITIVE_INFINITY) || (a == Float.NEGATIVE_INFINITY && b == Float.NEGATIVE_INFINITY);
     }
 
     public static void main(String[] args) {
