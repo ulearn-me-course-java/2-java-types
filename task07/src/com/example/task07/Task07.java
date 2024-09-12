@@ -5,8 +5,11 @@ public class Task07 {
     public static int solution(int n, int m, int k) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int lenghtCount = n/k;
+        int widhtCount = m/k;
 
-        return 0;
+
+        return lenghtCount*widhtCount;
     }
 
     public static void main(String[] args) {

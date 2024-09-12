@@ -6,8 +6,11 @@ public class Task14 {
     public static int reverse(int value) {
 
         // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
+        String strNum = Integer.toString(value);
+        String reverseNum = new StringBuilder(strNum).reverse().toString();
+        int result = Integer.parseInt(reverseNum);
 
-        return 0;
+        return result;
     }
 
     public static void main(String[] args) {
