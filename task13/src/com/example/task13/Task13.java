@@ -6,16 +6,12 @@ public class Task13 {
 
         // TODO привести букву к верхнему регистру
 
-        return c;
+        int num = (int)c - 32;
+        return (char)num;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        char result = solution('x');
-        System.out.println(result);
-         */
+
     }
 
 }
