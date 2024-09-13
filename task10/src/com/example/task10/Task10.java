@@ -3,13 +3,19 @@ package com.example.task10;
 public class Task10 {
 
     public static boolean compare(float a, float b, int precision) {
-
-        // TODO корректно сравнивать два значения типа float с заданной пользователем точностью (параметр - количество знаков после запятой).
-        // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
-        // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
-        
-        return a == b;
-
+        double epsilon = Math.pow(10, (double) -precision);
+        if (Float.isNaN(a) && Float.isNaN(b)){
+            return true;
+        }
+        else if ((a == Float.POSITIVE_INFINITY && b==Float.POSITIVE_INFINITY) || (a==Float.NEGATIVE_INFINITY && b==Float.NEGATIVE_INFINITY)){
+            return true;
+        }
+        else if (Math.abs(a-b) < epsilon){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {
@@ -18,7 +24,7 @@ public class Task10 {
         float sum = a + b;
         float c = 0.7f;
 
-        boolean result = compare(sum, c, 2);
+        boolean result = compare(sum, c, 3);
         System.out.println(result);
 
     }
