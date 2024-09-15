@@ -1,21 +1,18 @@
 package com.example.task05;
-
 public class Task05 {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        String strX = Integer.toString(x);
+        if (strX.contains("1") || strX.contains("3") || strX.contains("5") || strX.contains("7") || strX.contains("9"))
+        {
+            return "FALSE";
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         String result = solution(1234);
         System.out.println(result);
-        */
     }
 
 }

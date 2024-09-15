@@ -3,11 +3,11 @@ package com.example.task14;
 public class Task14 {
 
 
-    public static int reverse(int value) {
-
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+    public static int reverse(int value)
+    {
+        StringBuilder sBValue = new StringBuilder(Integer.toString(value)).reverse();
+        String strValue = sBValue.toString();
+        return Integer.parseInt(strValue);
     }
 
     public static void main(String[] args) {

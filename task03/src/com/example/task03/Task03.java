@@ -1,4 +1,5 @@
 package com.example.task03;
+import java.lang.Math;
 
 public class Task03 {
 
@@ -6,7 +7,7 @@ public class Task03 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        return (int) Math.floor(centimetre/100);
     }
 
     public static void main(String[] args) {
