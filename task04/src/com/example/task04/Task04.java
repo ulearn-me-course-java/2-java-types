@@ -6,6 +6,19 @@ public class Task04 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
+        if(operation == "+"){
+            return a+b;
+        }
+        else if(operation == "-"){
+            return a-b;
+        }
+        else if(operation == "*"){
+            return a*b;
+        }
+        else if(operation == "/"){
+            return (float) a/b;
+        }
+
         return 0;
     }
 

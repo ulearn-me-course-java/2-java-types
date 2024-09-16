@@ -6,7 +6,9 @@ public class Task07 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        int onLen = n / k;
+        int onWid = m / k;
+        return onWid * onLen;
     }
 
     public static void main(String[] args) {
