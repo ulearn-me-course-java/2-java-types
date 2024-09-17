@@ -4,18 +4,25 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        if (x < 0 || x > 99999) {
+            System.out.println("Число Х не входит в указанный диапазон");
+            System.exit(1);
+        }
+        String numberString = Integer.toString(x);
 
-        return "FALSE";
+        for (char digit : numberString.toCharArray()) {
+            if (Character.getNumericValue(digit) % 2 != 0) {
+                return "FALSE";
+            }
+        }
+        return "TRUE";
+
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution(1234);
+        String result = solution(93999);
         System.out.println(result);
-        */
+
     }
 
 }
