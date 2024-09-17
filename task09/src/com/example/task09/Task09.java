@@ -7,16 +7,20 @@ public class Task09 {
 
         float a = 1.0f;
         float b = 3.0f;
-        double x = (a / b - 1.0 / 3.0) * 1.0e9;
+
+        double x = a / b * 1.0e9 - 1.0 / 3.0 * 1.0e9;
+
+        if(a / b - 1.0 / 3.0 <10e-9){
+            return 0;
+        }
 
         return x;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение
-        /*
+
         System.out.println(solution());
-        */
+
     }
 
 }
