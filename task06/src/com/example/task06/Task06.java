@@ -5,8 +5,16 @@ public class Task06 {
     public static int solution(int x, int y) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        long sum = x + y;
 
-        return 0;
+        if (sum == 0) return 1;
+
+        int digits = 0;
+
+        for (;sum != 0; sum /= 10)
+            digits++;
+
+        return digits;
     }
 
     public static void main(String[] args) {
