@@ -1,21 +1,29 @@
 package com.example.task02;
 
 public class Task02 {
+    static int intMax = Integer.MAX_VALUE;
+    static int intMin = Integer.MIN_VALUE;
+
+    static byte byteMax = Byte.MAX_VALUE;
+    static byte byteMin = Byte.MIN_VALUE;
+
+    static short shortMax = Short.MAX_VALUE;
+    static short shortMin = Short.MIN_VALUE;
+
+    static long longMax = Long.MAX_VALUE;
+    static long longMin = Long.MIN_VALUE;
 
     public static String solution(String input) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        long longInput = Long.parseLong(input);
+        if ((longInput <= byteMax) && (longInput >= byteMin)) { return "byte";}
+        else if ((longInput <= shortMax) && (longInput >= shortMin)) { return "short";}
+        else if ((longInput <= intMax) && (longInput >= intMin)) { return "int";}
+        else if ((longInput <= longMax) && (longInput >= longMin)) { return "long";}
+        else {return "error";}
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+
     }
 
 }
