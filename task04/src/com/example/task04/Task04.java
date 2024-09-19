@@ -1,21 +1,29 @@
 package com.example.task04;
 
+import java.util.Objects;
+
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        float answer;
+        if (Objects.equals(operation, "/")) {
+            answer = (float) a / b; //Приводим к float или а или б, чтобы не выполнялось деление без остатка
+        } else if (Objects.equals(operation, "*")) {
+            answer = a * b;
+        } else if (Objects.equals(operation, "+")) {
+            answer = a + b;
+        } else {
+            answer = a - b;
+        }
+        return answer;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         float result = calculate(-25, 5, "/");
         System.out.println(result);
-        */
+
     }
 
 }
