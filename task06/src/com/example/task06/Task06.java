@@ -1,12 +1,12 @@
 package com.example.task06;
 
+
 public class Task06 {
 
     public static int solution(int x, int y) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        String str = Integer.toString(x + y);
+        str = str.replaceAll("-", "");
+        return str.length();
     }
 
     public static void main(String[] args) {
