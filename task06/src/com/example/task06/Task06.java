@@ -4,9 +4,15 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int sum = x + y;
+        int number_of_digits = 0;
 
-        return 0;
+        do {
+            sum /= 10;
+            number_of_digits++;
+        } while (Math.abs(sum) > 0);
+
+        return number_of_digits;
     }
 
     public static void main(String[] args) {
