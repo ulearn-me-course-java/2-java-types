@@ -1,12 +1,43 @@
 package com.example.task02;
 
+
 public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        byte tryByte;
+        try{
+            tryByte = Byte.parseByte(input);
+            return "byte";
+        } catch (NumberFormatException n){
+            int a;
+        }
 
-        return "";
+        short tryShort;
+        try{
+            tryShort = Short.parseShort(input);
+            return "short";
+        } catch (NumberFormatException n){
+            int a;
+        }
+
+        int tryInt;
+        try{
+            tryInt = Integer.parseInt(input);
+            return "int";
+        } catch (NumberFormatException n){
+            int a;
+        }
+
+        long tryLong;
+        try{
+            tryLong = Long.parseLong(input);
+            return "long";
+        } catch (NumberFormatException n){
+            int a;
+        }
+
+        return "another type";
     }
 
     public static void main(String[] args) {

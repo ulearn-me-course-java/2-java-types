@@ -5,9 +5,9 @@ public class Task14 {
 
     public static int reverse(int value) {
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
+        StringBuilder sr = new StringBuilder(String.valueOf(value));
 
-        return 0;
+        return Integer.parseInt(sr.reverse().toString());
     }
 
     public static void main(String[] args) {

@@ -3,19 +3,30 @@ package com.example.task04;
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
+        float res = 0;
+        float a2 = a;
+        float b2 = b;
+        switch (operation) {
+            case "+":
+                res = a2 + b2;
+                break;
+            case "-":
+                res = a2 - b2;
+                break;
+            case "*":
+                res = a2 * b2;
+                break;
+            case "/":
+                res = a2 / b2;
+                break;
+        }
+        return res;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        float result = calculate(-25, 5, "/");
-        System.out.println(result);
-        */
+
     }
 
 }
