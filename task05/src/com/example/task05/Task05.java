@@ -6,7 +6,17 @@ public class Task05 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return "FALSE";
+        String numberString = Integer.toString(x);
+
+        for (char symbol : numberString.toCharArray()) {
+            int digit = Character.getNumericValue(symbol);
+
+            if (digit % 2 != 0) {
+                return "FALSE";
+            }
+        }
+
+        return "TRUE";
     }
 
     public static void main(String[] args) {
