@@ -2,20 +2,24 @@ package com.example.task05;
 
 public class Task05 {
 
-    public static String solution(int x) {
+    public static String solution(int x)
+    {
+        String stringNum = Integer.toString(x);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        for (int i = 0; i<stringNum.length(); i++)
+        {
+            int ch = Character.getNumericValue(stringNum.charAt(i));
 
-        return "FALSE";
+            if (ch % 2 == 1) return "FALSE";
+        }
+
+        return "TRUE";
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution(1234);
+    public static void main(String[] args)
+    {
+        String result = solution(2240);
         System.out.println(result);
-        */
     }
 
 }

@@ -1,21 +1,29 @@
 package com.example.task06;
 
-public class Task06 {
+public class Task06
+{
 
-    public static int solution(int x, int y) {
+    public static int solution(int x, int y)
+    {
+        int results = x + y;
+        int cnt = 0;
+        String lengthrez = Integer.toString(results);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        for (int i = 0; i<lengthrez.length(); i++)
+        {
+            if (!(lengthrez.charAt(i)=='-'))
+            {
+                cnt+=1;
+            }
+        }
 
-        return 0;
+        return cnt;
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = solution(12, 34);
+    public static void main(String[] args)
+    {
+        int result = solution(120, 34);
         System.out.println(result);
-        */
     }
 
 }
