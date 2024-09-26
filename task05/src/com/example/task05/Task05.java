@@ -4,9 +4,19 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int number = Math.abs(x);
 
-        return "FALSE";
+        while (number > 0) {
+            int digit = number % 10;
+
+            if (digit % 2 != 0) {
+                return "FALSE";
+            }
+
+            number /= 10;
+        }
+
+        return "TRUE";
     }
 
     public static void main(String[] args) {
