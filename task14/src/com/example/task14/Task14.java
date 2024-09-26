@@ -5,9 +5,15 @@ public class Task14 {
 
     public static int reverse(int value) {
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        int res = 0;
+        if (value < 0) {
+            value = value * -1;
+        }
+        while (value > 0) {
+            res = res * 10 + value % 10;
+            value = value / 10;
+        }
+        return res;
     }
 
     public static void main(String[] args) {

@@ -3,10 +3,17 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
+        boolean res = true;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        while (x > 0) {
+            if ((x % 10) % 2 != 0) {
+                res = false;
+                break;
+            }
+            x = x / 10;
+        }
 
-        return "FALSE";
+        return res? "TRUE": "FALSE";
     }
 
     public static void main(String[] args) {
