@@ -4,9 +4,10 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int tentsInRow = n / k;
+        int tentsInColumn = m / k;
 
-        return 0;
+        return tentsInRow * tentsInColumn;
     }
 
     public static void main(String[] args) {
