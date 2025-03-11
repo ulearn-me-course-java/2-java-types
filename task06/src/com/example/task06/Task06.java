@@ -3,10 +3,14 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
+        int sum = Math.abs(x+y);
+        int counter = 0;
+        while (sum>0){
+            counter++;
+            sum /= 10;
+        }
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        return counter != 0 ? counter : 1;
     }
 
     public static void main(String[] args) {
