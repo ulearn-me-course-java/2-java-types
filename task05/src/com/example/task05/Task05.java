@@ -5,8 +5,13 @@ public class Task05 {
     public static String solution(int x) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        while (x > 0) {
+            int value = x % 10;
+            if (value % 2 != 0) return "FALSE";
+            x /= 10;
+        }
 
-        return "FALSE";
+        return "TRUE";
     }
 
     public static void main(String[] args) {
@@ -16,6 +21,8 @@ public class Task05 {
         String result = solution(1234);
         System.out.println(result);
         */
+        String result = solution(8264);
+        System.out.println(result);
     }
 
 }

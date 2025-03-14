@@ -6,16 +6,22 @@ public class Task06 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        int result = x + y;
+        int count = 0;
+        while (result != 0) {
+            count++;
+            result /= 10;
+        }
+        if (count == 0) return 1;
+
+        return count;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = solution(12, 34);
+
+        int result = solution(559, 34);
         System.out.println(result);
-        */
+
     }
 
 }
