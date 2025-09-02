@@ -23,7 +23,7 @@ public class Task04 {
     public static void main(String[] args) {
         float result = calculate(-25, 5, "/");
         System.out.println(result);
-        // еще раз. почему-то это задание отправилось вместе с task05
+        // еще раз. почему-то это задание отправилось вместе с task05. push
     }
 
 }
