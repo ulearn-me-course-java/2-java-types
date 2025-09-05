@@ -1,22 +1,22 @@
 package com.example.task14;
 
+import org.assertj.core.extractor.ToStringExtractor;
+import org.assertj.core.internal.bytebuddy.implementation.ToStringMethod;
+
 public class Task14 {
 
 
     public static int reverse(int value) {
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        String strNum = String.valueOf(value);
+        return Integer.parseInt(new StringBuilder(strNum).reverse().toString());
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         int result = reverse(345);
         System.out.println(result);
-         */
+
     }
 
 
