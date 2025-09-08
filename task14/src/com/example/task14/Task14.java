@@ -1,13 +1,12 @@
 package com.example.task14;
 
+import sun.jvm.hotspot.types.CIntegerField;
+
 public class Task14 {
 
 
     public static int reverse(int value) {
-
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        return Integer.parseInt(new StringBuilder(String.valueOf(value)).reverse().toString());
     }
 
     public static void main(String[] args) {
