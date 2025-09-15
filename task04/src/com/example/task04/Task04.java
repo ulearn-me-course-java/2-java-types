@@ -3,10 +3,21 @@ package com.example.task04;
 public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        switch (operation) {
+            case "+":
+                return (float) a + b;
+            case "-":
+                return (float) a - b;
+            case "*":
+                return (float) a * b;
+            case "/":
+                if (b == 0) {
+                    throw new ArithmeticException("Деление на ноль запрещено");
+                }
+                return (float) a / b;
+            default:
+                throw new IllegalArgumentException("Неизвестная операция: " + operation);
+        }
     }
 
     public static void main(String[] args) {

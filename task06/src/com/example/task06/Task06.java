@@ -3,10 +3,20 @@ package com.example.task06;
 public class Task06 {
 
     public static int solution(int x, int y) {
+        int sum = x + y;
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int absSum = Math.abs(sum);
 
-        return 0;
+        if (absSum == 0) {
+            return 1;
+        }
+
+        int digits = 0;
+        while (absSum > 0) {
+            absSum /= 10;
+            digits++;
+        }
+        return digits;
     }
 
     public static void main(String[] args) {
