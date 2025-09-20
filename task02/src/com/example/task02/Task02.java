@@ -3,10 +3,17 @@ package com.example.task02;
 public class Task02 {
 
     public static String solution(String input) {
+        try {
+            long value = Long.parseLong(input);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+            if (value >= -128 && value <= 127) return "byte";
+            if (value >= -32768 && value <= 32767) return "short";
+            if (value >= -2147483648L && value <= 2147483647L) return "int";
+            return "long";
 
-        return "";
+        } catch (NumberFormatException e) {
+            return "long";
+        }
     }
 
     public static void main(String[] args) {
