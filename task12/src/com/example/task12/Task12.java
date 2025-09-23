@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 public class Task12 {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
-
         for (int i = 1; i <= 12; i++) {
              sum = sum.add(sum.multiply(percent));
         }
