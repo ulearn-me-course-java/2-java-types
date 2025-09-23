@@ -17,7 +17,6 @@ public class Task12 {
         BigDecimal percent = new BigDecimal(0.00000001f).setScale(9, BigDecimal.ROUND_HALF_UP);
 
         sum = benefit(sum, percent);
-
         System.out.println("Сумма на счете через год: " + sum);
 
     }
