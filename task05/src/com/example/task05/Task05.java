@@ -4,18 +4,17 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        String num = String.valueOf(x);
+        for (int i = 0; i < num.length() ; i++) {
+            char symb = num.charAt(i);
+            if (symb % 2 == 0) continue;
+            else return "FALSE";
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution(1234);
+        String result = solution(5555);
         System.out.println(result);
-        */
     }
-
 }
