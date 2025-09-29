@@ -5,18 +5,19 @@ public class Task14 {
 
     public static int reverse(int value) {
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
+        String numStr = String.valueOf(value);
+        int num = Integer.parseInt(new StringBuilder(numStr).reverse().toString());
 
-        return 0;
+        return num;
     }
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-        /*
+
         int result = reverse(345);
         System.out.println(result);
-         */
+
     }
 
 
