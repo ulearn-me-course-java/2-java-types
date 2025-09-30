@@ -4,9 +4,12 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        // Вычисляем количество палаток по горизонтали и вертикали
+        int tentsInRow = n / k;
+        int tentsInColumn = m / k;
 
-        return 0;
+        // Общее количество палаток
+        return tentsInRow * tentsInColumn;
     }
 
     public static void main(String[] args) {
