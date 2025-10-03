@@ -3,10 +3,14 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
+        String numStr = String.valueOf(x);
+        for (int i = 0; i < numStr.length(); i++) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+            if ("02468".indexOf(numStr.charAt(i)) == -1) {
+                return "FALSE";
+            }
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {

@@ -4,10 +4,9 @@ public class Task14 {
 
 
     public static int reverse(int value) {
-
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        String str = String.valueOf(value);
+        String reversedStr = new StringBuilder(str).reverse().toString();
+        return Integer.parseInt(reversedStr);
     }
 
     public static void main(String[] args) {
