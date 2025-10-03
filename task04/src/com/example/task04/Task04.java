@@ -2,11 +2,19 @@ package com.example.task04;
 
 public class Task04 {
 
-    public static float calculate(int a, int b, String operation) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+    public static double calculate(int a, int b, String operation) {
+        if (operation == "+") {
+            return (double) a + b;
+        }
+        else if (operation == "-") {
+            return (double) a - b;
+        }
+        else if (operation == "*") {
+            return (double) a * b;
+        }
+        else {
+            return (double) a / b;
+        }
     }
 
     public static void main(String[] args) {
