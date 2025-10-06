@@ -1,15 +1,16 @@
 package com.example.task01;
 
-public class Task01 {
+public class Task01
+{
 
-    public static String solution() {
+    public static String solution()
+    {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "здесь какая-то неправильная строка";
+        return "Я думаю, быть программистом - это круто";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
         /*
@@ -17,5 +18,4 @@ public class Task01 {
         System.out.println(result);
          */
     }
-
 }
