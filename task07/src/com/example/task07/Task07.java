@@ -4,9 +4,13 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int area = m*n;
+        int tent = k*k;
 
-        return 0;
+        int x = n/k;
+        int y = m/k;
+
+        return x*y;
     }
 
     public static void main(String[] args) {

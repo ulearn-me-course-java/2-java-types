@@ -3,14 +3,16 @@ package com.example.task11;
 public class Task11 {
 
     public static float benefit(float sum, float percent) {
+        float totalIncrement = 0.0f;
+        float current = sum;
 
-        // TODO исправьте функцию, чтобы избежать накопления ошибки
-
-        // Считаем проценты за год
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            float increment = current * percent;
+            totalIncrement += increment;
+            current += increment;
         }
-        return sum;
+
+        return sum + totalIncrement;
     }
 
     public static void main(String[] args) {

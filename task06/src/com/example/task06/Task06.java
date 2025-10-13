@@ -4,9 +4,16 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int result = x+y;
+        String strResult = Integer.toString(result);
+        int count = 0;
+        if (result < 0) count = -1;
 
-        return 0;
+        for (int i = 0; i < strResult.length(); i++){
+            count++;
+        }
+
+        return count;
     }
 
     public static void main(String[] args) {
