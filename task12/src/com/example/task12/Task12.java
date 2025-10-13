@@ -4,20 +4,21 @@ import java.math.BigDecimal;
 
 public class Task12 {
 
+
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
+        int scale = 9;
 
-        // TODO раскомментируйте и исправьте код
+        sum = sum.setScale(scale, BigDecimal.ROUND_HALF_UP);
+        percent = percent.setScale(scale, BigDecimal.ROUND_HALF_UP);
 
-        // Считаем проценты за год
+        BigDecimal result = sum;
 
-        /*
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            BigDecimal increment = result.multiply(percent).setScale(scale, BigDecimal.ROUND_HALF_UP);
+            result = result.add(increment).setScale(scale, BigDecimal.ROUND_HALF_UP);
         }
-        return sum;
-        */
 
-        return BigDecimal.ZERO;
+        return result;
     }
 
     public static void main(String[] args) {

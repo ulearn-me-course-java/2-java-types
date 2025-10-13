@@ -1,12 +1,26 @@
 package com.example.task05;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        boolean flag = true;
 
-        return "FALSE";
+        String stringValue = String.valueOf(x);
+
+        for (int i = 0; i < stringValue.length(); i++){
+
+            char c = stringValue.charAt(i);
+            int digit = Character.getNumericValue(c);
+
+            if (digit % 2 !=0){
+                return "FALSE";
+            }
+        }
+
+        return "TRUE";
     }
 
     public static void main(String[] args) {
