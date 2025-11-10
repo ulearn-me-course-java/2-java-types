@@ -1,5 +1,7 @@
 package com.example.task11;
 
+import java.io.Console;
+
 public class Task11 {
 
     public static float benefit(float sum, float percent) {
@@ -7,10 +9,14 @@ public class Task11 {
         // TODO исправьте функцию, чтобы избежать накопления ошибки
 
         // Считаем проценты за год
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
-        }
-        return sum;
+//        for (int i = 1; i <= 12; i++) {
+//            sum += sum * percent;
+//            System.out.println(sum);
+//        }
+//        return sum;
+
+
+        return (float) (sum * Math.pow(1.0 + percent, 12));
     }
 
     public static void main(String[] args) {
